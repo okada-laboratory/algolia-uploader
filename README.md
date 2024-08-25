@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Upload Algolia Index
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - uses: okada-laboratory/algolia-uploader@master
