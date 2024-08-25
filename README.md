@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - uses: wangchucheng/algolia-uploader@master
+    - uses: okada-laboratory/algolia-uploader@master
       with:
         # Such as `Z0U0ACGBN8`
         app_id: <your_app_id>
