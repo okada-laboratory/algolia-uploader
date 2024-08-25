@@ -25,10 +25,11 @@ jobs:
         fetch-depth: 0
     - uses: okada-laboratory/algolia-uploader@master
       with:
+        # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ALGOLIA_APPLICATION_ID }}
         # Such as `Z0U0ACGBN8`
-        app_id: <your_app_id>
+        app_id: ${{ secrets.ALGOLIA_APPLICATION_ID }}
         # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ALGOLIA_ADMIN_KEY }}
-        admin_key: <your_admin_key>
+        admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
         # The index name. 
         index_name: <your_index_name>
         # The index file path relative to repo root.
